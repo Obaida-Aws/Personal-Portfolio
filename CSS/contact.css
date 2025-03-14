@@ -1,3 +1,10 @@
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6em;
+}
 .contact-form h2{
     text-align: center;
     margin-top: 6em;
@@ -12,8 +19,10 @@
 }
 .contact-form form .input-box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+
 }
 .contact-form form .input-box input,
 .contact-form form textarea{
