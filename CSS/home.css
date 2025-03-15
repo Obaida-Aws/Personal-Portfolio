@@ -1,35 +1,25 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
 .home {
     width: 100%;
     min-height: 100vh;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 7em;
-    padding: 30px 12% 0;
+    padding: 80px 12% 0;
 }
 
 .home-content {
     max-width: 800px;
-    padding-top: 80px;
-}
-
-.home-content h3 {
-    font-size: 42px;
 }
 
 .home-content h1 {
     font-size: 62px;
     line-height: 1.2;
+}
+
+.home-content h1 span {
+    color: #FF4500;
 }
 
 .home-content p {
@@ -39,7 +29,7 @@
 
 .btn-box {
     display: flex;
-    gap: 2em;
+    gap: 20px;
 }
 
 .btn-1, .btn-2 {
@@ -48,95 +38,150 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn-1 {
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 2px solid transparent;
+    background: black;
+    color: white;
 }
 
 .btn-1:hover {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #000000;
+    background: white;
+    color: black;
+    border: 2px solid black;
 }
 
 .btn-2 {
-    background-color: #FF4500;
-    color: #FFFFFF;
-    border: 2px solid #000000;
+    background: #FF4500;
+    color: white;
+    border: 2px solid black;
 }
 
 .btn-2:hover {
-    background-color: #FFFFFF;
+    background: white;
     color: #FF4500;
 }
+
 .img-box img {
     border-radius: 50%;
-    width: 550px;
-    height: 550px;
-    margin-top: 80px;
+    width: 500px;
+    height: 500px;
 }
+
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12% 8%;
     gap: 10em;
-    background-color: #000000;
+    background: black;
 }
+
 .about-img img {
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     box-shadow: 0 0 25px #FF4500, 0 0 50px #FF4500;
 }
+
 .about-content h2 {
-    color: #FFFFFF;
     font-size: 42px;
+    color: white;
+}
+
+.about-content h2 span {
+    color: #FF4500;
 }
 
 .about-content h3 {
     font-size: 62px;
-    color: #FFFFFF;
+    color: white;
 }
+
 .about-content p {
-    color: #FFFFFF;
+    color: white;
     font-size: 20px;
-    margin: 2em 0 3em;
+    margin: 20px 0;
 }
+
+.title {
+    text-align: center;
+    font-size: 2.2em;
+    color: #FF4500;
+    margin-bottom: 30px;
+}
+
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: white;
+    width: 320px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    color: #FF4500;
+    margin-top: 10px;
+}
+
 @media (max-width: 1024px) {
     .home {
         flex-direction: column;
-        gap: 2em;
         text-align: center;
-        padding: 50px 5%;
     }
+
     .img-box img {
         width: 80%;
-        height: auto;
     }
+
     .about {
         flex-direction: column;
-        gap: 2em;
-        padding: 50px 5%;
         text-align: center;
     }
+
     .about-img img {
         width: 80%;
-        height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .home-content h1 {
         font-size: 48px;
-    }
-
-    .home-content h3 {
-        font-size: 32px;
+        margin-top: 120px;
     }
 
     .btn-box {
@@ -151,23 +196,12 @@
     .about-content h3 {
         font-size: 48px;
     }
-
-    .about-content p {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 480px) {
     .home-content h1 {
         font-size: 36px;
-    }
-
-    .home-content h3 {
-        font-size: 28px;
-    }
-
-    .btn-box {
-        flex-direction: column;
+        margin-top: 120px;
     }
 
     .about-content h2 {
@@ -178,56 +212,27 @@
         font-size: 36px;
     }
 
-    .about-content p {
-        font-size: 14px;
-    }
-
     .img-box img,
     .about-img img {
         width: 100%;
-        height: auto;
     }
 }
-.title{
-    display: flex;
-    justify-content: center;
+.more-details-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #FF4500;
+    color: white;
+    border: 2px solid transparent;
+    margin-top: 15px;
+}
+
+.more-details-btn:hover {
+    background-color: white;
     color: #FF4500;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
+    border: 2px solid #FF4500;
 }
-.cards-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-}
-.card{
-    background-color: #FFFFFF;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15PX;
-    transition: 0.7s ease;
-}
-.card:hover{
-    transform: scale(1.1);
-}
-.icon{
-    color: #FF4500;
-    font-size: 6em;
-    text-align: center;
-}
-.info{
-    text-align: center;
-}
-.info h3{
-    color: #FF4500;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
+
