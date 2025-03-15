@@ -123,7 +123,8 @@
 
 .card {
     background: white;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -156,6 +157,7 @@ figcaption {
     color: #555;
     margin-top: 5px;
 }
+
 .info {
     display: flex;
     flex-direction: column;
@@ -168,6 +170,11 @@ figcaption {
     font-size: 1.2rem;
     color: #FF4500;
     margin-top: 10px;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 @media (max-width: 1024px) {
@@ -188,6 +195,23 @@ figcaption {
     .about-img img {
         width: 80%;
     }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .info h3 {
+        font-size: 1.1rem;
+    }
+
+    .info p {
+        font-size: 0.95rem;
+    }
+
+    figcaption {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -207,6 +231,23 @@ figcaption {
 
     .about-content h3 {
         font-size: 48px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info h3 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    figcaption {
+        font-size: 0.8rem;
     }
 }
 
@@ -229,6 +270,7 @@ figcaption {
         width: 100%;
     }
 }
+
 .more-details-btn {
     padding: 12px 25px;
     border-radius: 8px;
@@ -248,4 +290,3 @@ figcaption {
     color: #FF4500;
     border: 2px solid #FF4500;
 }
-

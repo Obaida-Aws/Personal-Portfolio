@@ -12,12 +12,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
-    background: #000000;
+    padding: 20px 12%;
+    background: #000;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     z-index: 100;
 }
 
@@ -30,8 +31,7 @@
 
 .logo:hover {
     color: #FF4500;
-    text-shadow: 0 0 25px #FF4500,
-                 0 0 50px #FF4500;
+    text-shadow: 0 0 25px #FF4500, 0 0 50px #FF4500;
     transform: scale(1.1);
 }
 
@@ -42,10 +42,6 @@ span {
 .navbar ul {
     display: flex;
     gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
 }
 
 .navbar ul li {
@@ -59,7 +55,6 @@ span {
     padding: 5px 10px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
-    text-decoration: none;
 }
 
 .navbar ul li a:hover,
@@ -67,25 +62,8 @@ span {
     color: #FF4500;
     border-bottom: 3px solid #FF4500;
 }
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
 
-    .navbar ul li {
-        display: block;
-    }
-
-    .navbar ul li a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-}
-
-.contact{
+.contact {
     padding: 10px 28px;
     background-color: #FFFFFF;
     color: #000000;
@@ -96,27 +74,31 @@ span {
     font-weight: 600;
     transition: 0.3s ease;
 }
-.contact:hover{
+
+.contact:hover {
     background-color: #FF4500;
     box-shadow: 0 0 25px #FF4500;
     color: #FFFFFF;
 }
-.footer{
+
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
     background-color: #000000;
 }
-.footer .social{
+
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: #FFFFFF;
 }
-.footer .social a{
+
+.footer .social a {
     font-size: 24px;
     color: #FFFFFF;
-    border: 2px sold #FF4500;
+    border: 2px solid #FF4500;
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -127,12 +109,14 @@ span {
     box-shadow: inset 0 0 10px #FF4500, 0 0 10px #FF4500;
     transition: 0.3s ease;
 }
-.footer .social a:hover{
-    transform: scale(1.2)translateY(-10px);
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
     color: #FF4500;
     border: 2px solid #FF4500;
 }
-.footer ul{
+
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -140,21 +124,43 @@ span {
     margin-bottom: 0;
     text-align: center;
 }
+
 .footer ul li a {
     color: #FFFFFF;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     border-bottom: 3px solid #FF4500;
 }
-.footer ul li{
+
+.footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-.footer .copyright{
-    margin-top:15px;
+
+.footer .copyright {
+    margin-top: 15px;
     text-align: center;
     font-size: 12px;
     color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contact {
+        margin-top: 10px;
+    }
 }
