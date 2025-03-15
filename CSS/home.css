@@ -11,6 +11,7 @@
 
 .home-content {
     max-width: 800px;
+    margin-top: 120px;
 }
 
 .home-content h1 {
@@ -128,6 +129,10 @@
     padding: 20px;
     transition: transform 0.3s;
     text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
 }
 
 .card:hover {
@@ -150,6 +155,13 @@ figcaption {
     font-size: 0.9rem;
     color: #555;
     margin-top: 5px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; 
+    margin-bottom: 20px; 
 }
 
 .info h3 {
@@ -228,6 +240,7 @@ figcaption {
     color: white;
     border: 2px solid transparent;
     margin-top: 15px;
+    align-self: center; 
 }
 
 .more-details-btn:hover {
