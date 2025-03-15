@@ -6,9 +6,7 @@
     <title>Obaida's Portfolio</title>
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/contact.css">
- 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <header class="header">
@@ -21,42 +19,53 @@
         </nav>
     </header>
     
+    <section class="contact-form">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
 
-   <section class="contact-form">
-    <h2 class="contact-me">Contact <span>Me</span></h2>
-    <form action="#">
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="input-box">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject">
+            </div>
+
+            <div class="input-box">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
         </div>
-
-        <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Subject">
-        </div>
-
-        <textarea name="" id="" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn-1">
-    </form>
-   </section>
-
-
-   
-   <footer class="footer">
-    <div class="social">
-        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-        <a href="#"><i class='bx bxl-twitter' ></i></a>
-    </div>
-    <ul class="list">
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    <p class="copyright">@ 2025 Obaida | All Rights Reserved</p>
-   </footer>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">@ 2025 Obaida | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
